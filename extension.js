@@ -53,11 +53,11 @@
     //Change the bots default settings and make sure they are loaded on launch
 
     localStorage.setItem("basicBotsettings", JSON.stringify({
-        botName: "basicBot",
+        botName: "Nightcorer",
         language: "english",
         chatLink: "https://rawgit.com/Yemasthui/basicBot/master/lang/en.json",
         maximumAfk: 120,
-        afkRemoval: true,
+        afkRemoval: false,
         maximumDc: 60,
         bouncerPlus: true,
         lockdownEnabled: false,
@@ -89,11 +89,11 @@
         etaRestriction: false,
         welcome: true,
         opLink: null,
-        rulesLink: null,
+        rulesLink: "http://www.nightcore-331.tk/viewtopic.php?f=6&t=1",
         themeLink: null,
         fbLink: null,
         youtubeLink: null,
-        website: null,
+        website: "http://www.nightcore-331.tk/index.php",
         intervalMessages: [],
         messageInterval: 5,
         songstats: true,
