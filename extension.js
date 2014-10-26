@@ -33,14 +33,14 @@
          */
 
         bot.commands.baconCommand = {
-            command: 'bacon',  //The command to be called. With the standard command literal this would be: !bacon
+            command: 'bigboss',  //The command to be called. With the standard command literal this would be: !bacon
             rank: 'user', //Minimum user permission to use the command
             type: 'exact', //Specify if it can accept variables or not (if so, these have to be handled yourself through the chat.message
             functionality: function (chat, cmd) {
                 if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                 if (!bot.commands.executable(this.rank, chat)) return void (0);
                 else {
-                    API.sendChat("/me Bacon!!!");
+                    API.sendChat("/me BIIIIIG BOSSSSS GOSTOSO!!!");
                 }
             }
         };
@@ -53,9 +53,9 @@
     //Change the bots default settings and make sure they are loaded on launch
 
     localStorage.setItem("basicBotsettings", JSON.stringify({
-        botName: "Nightcorer",
-        language: "english",
-        chatLink: "https://rawgit.com/Yemasthui/basicBot/master/lang/en.json",
+        botName: "Nightcorer щ(ಠ益ಠщ)",
+        language: "portuguese",
+        chatLink: "https://rawgit.com/Yemasthui/basicBot/master/lang/pt.json",
         maximumAfk: 120,
         afkRemoval: false,
         maximumDc: 60,
@@ -66,7 +66,7 @@
         cycleGuard: true,
         maximumCycletime: 10,
         timeGuard: true,
-        maximumSongLength: 10,
+        maximumSongLength: 6,
         autodisable: true,
         commandCooldown: 30,
         usercommandsEnabled: true,
@@ -85,15 +85,15 @@
         motdEnabled: false,
         motdInterval: 5,
         motd: "Temporary Message of the Day",
-        filterChat: true,
+        filterChat: false,
         etaRestriction: false,
         welcome: true,
         opLink: null,
-        rulesLink: "http://www.nightcore-331.tk/viewtopic.php?f=6&t=1",
+        rulesLink: null,
         themeLink: null,
-        fbLink: null,
+        fbLink: "https://www.facebook.com/groups/groupamordoce/",
         youtubeLink: null,
-        website: "http://www.nightcore-331.tk/index.php",
+        website: "https://www.facebook.com/pages/Amor-Doce-Society",
         intervalMessages: [],
         messageInterval: 5,
         songstats: true,
